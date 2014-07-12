@@ -1,4 +1,4 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php if ( ! defined('BASEPATH')) { exit('No direct script access allowed'); }
 class Noticias extends CI_Controller {
     function __construct() {
         parent::__construct();
@@ -6,7 +6,7 @@ class Noticias extends CI_Controller {
     }
     
     function index() {
-        $this->load->helper(array('form', 'url'));
+        $this->load->helpers(array('form', 'url'));
         $data = array();
         $this->load->view('include/header', $data);
         $this->load->view('noticias', $data);
