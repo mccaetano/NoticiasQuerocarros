@@ -47,22 +47,24 @@
 
 $active_group = 'default';
 $active_record = TRUE;
-
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = '';
-$db['default']['password'] = '';
-$db['default']['database'] = '';
-$db['default']['dbdriver'] = 'mysql';
+//mssql2.websitelive.net --> 92.53.240.72
+$db['default']['hostname'] = 'mssql2.websitelive.net';
+$db['default']['username'] = 'itcar';
+$db['default']['password'] = 'Ro2342312405';
+$db['default']['database'] = 'itcar';
+$db['default']['dbdriver'] = 'sqlsrv';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;
-$db['default']['cache_on'] = FALSE;
-$db['default']['cachedir'] = '';
+$db['default']['cache_on'] = TRUE;
+$db['default']['cachedir'] = 'application/cache/';
 $db['default']['char_set'] = 'utf8';
 $db['default']['dbcollat'] = 'utf8_general_ci';
 $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
+$db['default']['port'] = 1433;
+
 
 
 /* End of file database.php */
