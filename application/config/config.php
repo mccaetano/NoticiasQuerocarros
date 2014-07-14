@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://mccaetao.dev/NoticiasQuerocarros/';
+$config['base_url']	= 'http://mccaetano.dev/NoticiasQuerocarros/';
 
 /*
 |--------------------------------------------------------------------------

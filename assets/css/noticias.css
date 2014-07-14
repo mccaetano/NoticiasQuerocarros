@@ -1,5 +1,22 @@
 .container {
+    margin: 0 auto;
     width: 1020px;
-    background-image: url('imagem/load/aHR0cDovL3d3dy5xdWVyb2NhcnJvcy5jb20vaW1hZ2Vucy9mdW5kb19nZXJhbC5qcGc%3D');
-    background-repeat: repeat-x;
+    background-color: #FCFCFC;
+    
+}
+.rowhead {
+    width: 100%;
+    background-image: url('http://mccaetano.dev/NoticiasQuerocarros/imagem/load/aHR0cDovL3d3dy5xdWVyb2NhcnJvcy5jb20vaW1hZ2Vucy90b3BvLmpwZw%3D%3D');
+    background-repeat: repeat-x;    
+}
+.rowcontent {
+    width: 100%;
+    background-color: #FCFCFC;
+}
+.wrap {
+    width: 950px; 
+    height: 100%;
+    margin: 0 auto; 
+    padding-left:0px;
+    background-color: #FCFCFC;
 }
