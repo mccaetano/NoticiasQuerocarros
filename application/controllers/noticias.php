@@ -20,10 +20,10 @@ class Noticias extends CI_Controller {
         
         $this->load->model("Wtb_noticias_automotivas");
         $this->Wtb_noticias_automotivas->buscaNoticia($cd_noticia);
-        
+        $noticia = $this->Wtb_noticias_automotivas->buscaNoticia($cd_noticia);
         $this->load->helpers(array('form', 'url'));
         $data = array();
-        $data['noticia'] = $this->Wtb_noticias_automotivas->buscaNoticia($cd_noticia);
+        $data['noticia'] = $noticia[0];
         $this->load->view('include/header', $data);
         $this->load->view('include/menu', $data);
         $this->load->view('include/header1', $data);
