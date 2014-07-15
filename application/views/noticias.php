@@ -6,7 +6,7 @@
 <div>
     <div>
         <figure id="slide">
-            <img alt="<?php echo iconv("utf-8", "iso-8859-1", $noticias[0]->st_noticia); ?>" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticias[0]->st_imagem_1)) ?>" width="620" height="310"/>
+            <img class="ativo" alt="<?php echo iconv("utf-8", "iso-8859-1", $noticias[0]->st_noticia); ?>" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticias[0]->st_imagem_1)) ?>" width="620" height="310"/>
             <img alt="<?php echo iconv("utf-8", "iso-8859-1", $noticias[1]->st_noticia); ?>" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticias[1]->st_imagem_1)) ?>" width="620" height="310"/>
             <img alt="<?php echo iconv("utf-8", "iso-8859-1", $noticias[2]->st_noticia); ?>" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticias[2]->st_imagem_1)) ?>" width="620" height="310"/>
             <img alt="<?php echo iconv("utf-8", "iso-8859-1", $noticias[3]->st_noticia); ?>" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticias[3]->st_imagem_1)) ?>" width="620" height="310"/>
@@ -34,6 +34,7 @@
         <div class="noticia_quadro">
             <img alt="No Image" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticias[4]->st_imagem_1)) ?>" width="420" height="220"/>
             <h2><?php echo iconv("utf-8", "iso-8859-1", $noticias[4]->st_noticia); ?></h2>
+            <div><?php echo iconv("utf-8", "iso-8859-1", $noticias[4]->st_fonte); ?></div>
             <p><?php echo substr(mb_convert_encoding((string)$noticias[4]->st_descricao, "iso-8859-1", "auto"), 0, 512); ?>...</p>
         </div>
         <div class="noticia_quadro">
@@ -55,12 +56,5 @@
     </div>
 </div>
 <div>
-    <div class="tabs">
-        <ul>
-            <li><a href="#tabs-1">Ultimas notícias</a></li>
-            <li><a href="#tabs-1">Todas</a></li>
-        </ul>
-        <div class="tabs-1"></div>
-        <div class="tabs-1"></div>
-    </div>
+    <a href="<?php echo base_url(); ?>noticias/todas">Todas as  Notícias...</a>
 </div>

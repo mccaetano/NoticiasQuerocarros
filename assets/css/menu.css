@@ -13,7 +13,7 @@ display: block; /* overrides above hide */
 
 /* Main menu styles */
 .dcjq-mega-menu ul.menu {
-background: #4E922D url(images/bg_black.png) repeat-x 0 -80px; 
+background: #4E922D url(../image/bg_black.png) repeat-x 0 -80px; 
 width: 940; 
 height: 40px; 
 border-right: 1px solid #1B1B1B; 
@@ -30,7 +30,7 @@ font-weight: bold;
 float: left; 
 display: block;  
 padding: 12px 25px; 
-background: url(images/bg_black.png) repeat-x 100% 0; 
+background: url(../image/bg_black.png) repeat-x 100% 0; 
 color: #fff;
 text-shadow: 1px 1px 1px #000; 
 text-decoration: none;
@@ -53,7 +53,7 @@ top: 18px;
 right: 15px; 
 width: 8px; 
 height: 6px; 
-background: url(images/arrow.png) no-repeat 0 0;
+background: url(../image/arrow.png) no-repeat 0 0;
 }
 .dcjq-mega-menu ul.menu li.mega-hover a .dc-mega-icon {
 background-position: 0 100%;
@@ -63,12 +63,12 @@ background-position: 0 100%;
 /* Mega Drop Down Container */
 .dcjq-mega-menu ul.menu li .sub-container {
 position: absolute; /* Required */
-background: url(images/bg_sub_left.png) no-repeat 0 100%; 
+background: url(../image/bg_sub_left.png) no-repeat 0 100%; 
 padding-left: 10px; 
 margin-left: -3px;
 }
 .dcjq-mega-menu ul.menu li .sub {
-background: url(images/bg_sub.png) no-repeat 100% 100%; 
+background: url(../image/bg_sub.png) no-repeat 100% 100%; 
 padding: 20px 20px 20px 10px;
 }
 .dcjq-mega-menu ul.menu li .sub-container.mega .sub {
@@ -115,7 +115,7 @@ border-bottom: 1px solid #ccc;
 text-transform: uppercase; 
 font-weight: bold; 
 color: #000; 
-background: #EAEAEA url(images/bg_hdr.png) repeat-x center center;
+background: #EAEAEA url(../image/bg_hdr.png) repeat-x center center;
 }
 .dcjq-mega-menu ul.menu li .sub li.mega-hdr a.mega-hdr-a:hover {
 color: #000; 
@@ -125,22 +125,22 @@ text-shadow: none;
 
 /* Add the individual sub-menu backgrounds */
 .dcjq-mega-menu ul.menu li .sub li#menu-item-1 {
-background: url(imagens/Security-Camera-icon.png) no-repeat 155px 40px;
+background: url(.../image/Security-Camera-icon.png) no-repeat 155px 40px;
 }
 .dcjq-mega-menu ul.menu li .sub li#menu-item-2 {
-background: url(images/bg_sedan.jpg) no-repeat 135px 40px;
+background: url(.../image/bg_sedan.jpg) no-repeat 135px 40px;
 }
 .dcjq-mega-menu ul.menu li .sub li#menu-item-3 {
-background: url(images/bg_convert.jpg) no-repeat 135px 40px;
+background: url(.../images/bg_convert.jpg) no-repeat 135px 40px;
 }
 .dcjq-mega-menu ul.menu li .sub li#menu-item-4 {
-background: url(images/bg_suv.jpg) no-repeat 135px 40px;
+background: url(.../image/bg_suv.jpg) no-repeat 135px 40px;
 }
 .dcjq-mega-menu ul.menu li .sub li#menu-item-5 {
-background: url(images/bg_pickup.jpg) no-repeat 135px 40px;
+background: url(.../image/bg_pickup.jpg) no-repeat 135px 40px;
 }
 .dcjq-mega-menu ul.menu li .sub li#menu-item-6 {
-background: url(images/bg_sports.jpg) no-repeat 135px 40px;
+background: url(.../image/bg_sports.jpg) no-repeat 135px 40px;
 }
 
 /* Style the 3rd level links */
@@ -151,11 +151,11 @@ margin-right: 90px;
 color: #444;
 font-weight: normal; 
 padding: 3px 0 3px 25px; 
-background: url(images/bullet.png) no-repeat 10px 8px; 
+background: url(.../image/bullet.png) no-repeat 10px 8px; 
 }
 .dcjq-mega-menu ul.menu .sub li.mega-hdr li a:hover {
 color: #990000;
-background-image: url(images/bullet_on.png); 
+background-image: url(.../image/bullet_on.png); 
 }
 
 /* Styling for items with only 2 levels */
@@ -167,9 +167,9 @@ width: 190px; /* Set the drop down width */
 }
 .dcjq-mega-menu ul.menu li .sub-container.non-mega li a {
 padding: 7px 5px 7px 22px; 
-background: url(images/bullet.png) no-repeat 5px 12px;
+background: url(.../image/bullet.png) no-repeat 5px 12px;
 }
 .dcjq-mega-menu ul.menu li .sub-container.non-mega li a:hover {
 color: #990000;
-background-image: url(images/bullet_on.png);
+background-image: url(.../image/bullet_on.png);
 }
