@@ -17,8 +17,8 @@
     
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
-    <script type='text/javascript' src='http://www.querocarros.com/js/jquery.hoverIntent.minified.js'></script>
-    <script type='text/javascript' src='http://www.querocarros.com/js/jquery.dcmegamenu.1.2.js'></script>
+    <script src="<?php echo base_url(); ?>assets/js/jquery.hoverIntent.minified.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/jquery.dcmegamenu.1.2.js"></script>
     
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

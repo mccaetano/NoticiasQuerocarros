@@ -1,7 +1,4 @@
-<script type="text/javascript" src="http://www.querocarros.com/js/jquery-latest.pack.js"></script>
-
-
-<script type="text/javascript">
+<script>
 
 //jkmegamenu.definemenu("anchorid", "menuid", "mouseover|click")
 jkmegamenu.definemenu("megaanchor", "megamenu1", "mouseover");
