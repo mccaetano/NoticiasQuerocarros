@@ -6,8 +6,11 @@ class Noticias extends CI_Controller {
     }
     
     function index() {
+        $this->load->model("Wtb_noticias_automotivas");
+        $noticias =  $this->Wtb_noticias_automotivas->listaNoticias();        
         $this->load->helpers(array('form', 'url'));
         $data = array();
+        $data['noticias'] = $noticias;
         $this->load->view('include/header', $data);
         $this->load->view('include/menu', $data);
         $this->load->view('include/header1', $data);
@@ -19,7 +22,6 @@ class Noticias extends CI_Controller {
     function detalhe($cd_noticia = FALSE) {
         
         $this->load->model("Wtb_noticias_automotivas");
-        $this->Wtb_noticias_automotivas->buscaNoticia($cd_noticia);
         $noticia = $this->Wtb_noticias_automotivas->buscaNoticia($cd_noticia);
         $this->load->helpers(array('form', 'url'));
         $data = array();
