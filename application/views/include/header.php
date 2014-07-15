@@ -8,8 +8,8 @@
     <meta charset="ISO-8859-1"/>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="http://www.querocarros.com/css/global.css">
-    <link href="http://www.querocarros.com/menu.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/global.css">
+    <link href="<?php echo base_url(); ?>assets/css/menu.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/theme.css">
     <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">    
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/noticias.css">    
