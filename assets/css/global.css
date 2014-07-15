@@ -619,7 +619,7 @@ font-family: "Arial";
 	font-style:italic;
 }
 
-.../imgshadow { /* Better style on light background */
+.imgshadow { /* Better style on light background */
 	background:#FFFFFF;
 	padding:4px;
 	border:1px solid #777777;
@@ -628,7 +628,7 @@ font-family: "Arial";
 	-webkit-box-shadow:0px 0px 5px #666666;
 	box-shadow:0px 0px 5px #666666;
 }
-.../img_left { /* Image sticks to the left */
+.img_left { /* Image sticks to the left */
 	width:auto;
 	float:left;
 	margin:5px 15px 5px 5px;
@@ -702,7 +702,7 @@ font-family: "Arial";
 /*FIM MENU SITE*/
 
 
-}
+
 
 a {color:#333; text-decoration:none}
 
@@ -854,7 +854,7 @@ font-weight: bold;
     -moz-border-radius: 3px;
     border-radius: 3px;
 }
-}
+
 
 		.box1 {
 			background-color: #f0f0f0;
@@ -868,7 +868,7 @@ font-weight: bold;
 			border-radius: 11px;
 		}
 		.box2 {
-			background: transparent url(ashera.jpg); no-repeat top left;
+			background: transparent url(ashera.jpg)  no-repeat top left;
 			width: 934px;
 			height: 77px;
 			margin: 0 auto 15px auto;
