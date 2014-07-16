@@ -24,7 +24,7 @@
     width: 550px; 
     overflow: hidden; 
     height: 300px; 
-    margin: 50px auto; 
+    margin: 0 auto; 
     box-shadow: 0 0 8px #000; 
     position: relative; 
 } 
@@ -66,6 +66,7 @@
 .noticia_quadro h2 {
     text-decoration-color: #4F8A10;
     font-size: larger;
+    font-weight: bold;
 }
 .noticia_quadro p {
     text-overflow: ellipsis;
@@ -78,4 +79,11 @@
 .noticia_quadro img {
     alignment-adjust: central;
     text-align: center;
+}
+.noticia_map {
+    color: #777777;
+}
+
+.noticia_map a {
+    color: #888888;
 }
