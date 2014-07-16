@@ -31,7 +31,7 @@
                 }
             </script>
         </div>
-        <div style="alignment-adjust: middle; width: 80px; padding: 10px; height: 350px;">
+        <div style="float: left; width: 80px; padding: 10px; height: 350px;">
             <a href="<?php echo base_url(); ?>noticias/detalhe/<?php echo $noticias[0]->cd_noticia?>"><img alt="<?php echo iconv("utf-8", "iso-8859-1", $noticias[0]->st_noticia); ?>" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticias[0]->st_imagem_1)) ?>" width="48" height="48"/></a><br/>
             <a href="<?php echo base_url(); ?>noticias/detalhe/<?php echo $noticias[1]->cd_noticia?>"><img alt="<?php echo iconv("utf-8", "iso-8859-1", $noticias[1]->st_noticia); ?>" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticias[1]->st_imagem_1)) ?>" width="48" height="48"/></a><br/>
             <a href="<?php echo base_url(); ?>noticias/detalhe/<?php echo $noticias[2]->cd_noticia?>"><img alt="<?php echo iconv("utf-8", "iso-8859-1", $noticias[2]->st_noticia); ?>" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticias[2]->st_imagem_1)) ?>" width="48" height="48"/></a><br/>
