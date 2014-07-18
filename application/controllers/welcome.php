@@ -19,6 +19,8 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
+            redirect(base_url() . "noticias");
+            /*
 		$filename = "http://www.dimensaolocacao.com.br/site/img/noimage.gif";
 		
 		$fp = fopen($filename, FOPEN_READ);
@@ -27,7 +29,7 @@ class Welcome extends CI_Controller {
 		fpassthru($fp);
 		
 		exit(0);
-				
+	   */		
 	}
 }
 
