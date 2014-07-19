@@ -1,12 +1,13 @@
-<div>
-    <div style="height: 10px"></div>        
-    <div class="noticia_map"><a href="http://www.querocarros.com">home</a>/<a href="<?php echo base_url();?>noticias">noticias</a>/<?php echo iconv("utf-8", "iso-8859-1", $noticia->st_noticia); ?></div>
-    <div style="height: 10px"></div>
+<div style="height: 10px"></div>        
+<div class="noticia_map"><a href="http://www.querocarros.com">home</a>/<a href="<?php echo base_url();?>noticias">noticias</a>/<?php echo iconv("utf-8", "iso-8859-1", $noticia->st_noticia); ?></div>
+<div style="height: 10px"></div>
+<div style="border: 1px solid #E2E4E6">
+    
     <h1><?php echo iconv("utf-8", "iso-8859-1", $noticia->st_noticia); ?></h1>
     <div><?php echo iconv("utf-8", "iso-8859-1", $noticia->st_autor); ?>
         <div><?php echo $noticia->dt_noticia; ?>|<a href="<?php echo base_url()."link/redirect/".urlencode(base64_encode($noticia->st_link)); ?>"><?php echo $noticia->st_fonte == null ? "Fonte" : iconv("utf-8", "iso-8859-1", $noticia->st_fonte); ?></a>
     </div>
-        <div style="border: 1px solid #E2E4E6">
+        <div>
         <div class="limpa"></div>
         <div style="margin: 0 auto; width: 690px">
             <div style="float: left; width: 570px; padding: 10px; height: 350px;">

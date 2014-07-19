@@ -9,7 +9,7 @@ for ($i=0; $i<count($noticias); $i++) {
 ?>
 
     <div style="border: 1px solid #dcdcdc;height: 130px; width: 100%; margin: 2px;">
-        <a href="<?php echo base_url(); ?>noticias/detalhe/<?php echo $noticias[$i]->cd_noticia ?>">
+        <a href="<?php echo base_url(); ?>noticias/detalhe/<?php echo urlencode(str_replace(" ", "-", iconv("utf-8", "iso-8859-1", $noticias[$i]->st_noticia))); ?>/<?php echo $noticias[$i]->cd_noticia ?>">
         <div style="padding: 5px; float: left; width: 120px; height: 120px">
             <img src="<?php echo base_url()."imagem/load/".  urlencode(base64_encode($noticias[$i]->st_imagem_1));?>" width="120" height="120"/>
         </div>
