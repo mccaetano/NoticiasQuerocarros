@@ -6,7 +6,7 @@
     <div><?php echo iconv("utf-8", "iso-8859-1", $noticia->st_autor); ?>
         <div><?php echo $noticia->dt_noticia; ?>|<a href="<?php echo base_url()."link/redirect/".urlencode(base64_encode($noticia->st_link)); ?>"><?php echo $noticia->st_fonte == null ? "Fonte" : iconv("utf-8", "iso-8859-1", $noticia->st_fonte); ?></a>
     </div>
-    <div>
+        <div style="border: 1px solid #E2E4E6">
         <div class="limpa"></div>
         <div style="margin: 0 auto; width: 690px">
             <div style="float: left; width: 570px; padding: 10px; height: 350px;">
@@ -36,10 +36,10 @@
                 </script>
             </div>
             <div style="float: left; width: 80px; padding: 10px; height: 350px;">
-                <a href="<?php echo base_url(); ?>noticias/detalhe/<?php echo $noticia->cd_noticia?>"><img title="<?php echo iconv("utf-8", "iso-8859-1", $noticia->st_noticia); ?>" alt="Imagem 1" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticia->st_imagem_1)) ?>" width="48" height="48"/></a><br/>
-                <a href="<?php echo base_url(); ?>noticias/detalhe/<?php echo $noticia->cd_noticia?>"><img title="<?php echo iconv("utf-8", "iso-8859-1", $noticia->st_noticia); ?>" alt="Imagem 2" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticia->st_imagem_2)) ?>" width="48" height="48"/></a><br/>
-                <a href="<?php echo base_url(); ?>noticias/detalhe/<?php echo $noticia->cd_noticia?>"><img title="<?php echo iconv("utf-8", "iso-8859-1", $noticia->st_noticia); ?>" alt="Imagem 3" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticia->st_imagem_3)) ?>" width="48" height="48"/></a><br/>
-                <a href="<?php echo base_url(); ?>noticias/detalhe/<?php echo $noticia->cd_noticia?>"><img title="<?php echo iconv("utf-8", "iso-8859-1", $noticia->st_noticia); ?>" alt="Imagem 4" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticia->st_imagem_4)) ?>" width="48" height="48"/></a><br/>
+                <a href="<?php echo base_url(); ?>noticias/detalhe/<?php echo $noticia->cd_noticia;?>"><img title="<?php echo iconv("utf-8", "iso-8859-1", $noticia->st_noticia); ?>" alt="Imagem 1" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticia->st_imagem_1)) ?>" width="48" height="48"/></a><br/>
+                <a href="<?php echo base_url(); ?>noticias/detalhe/<?php echo $noticia->cd_noticia;?>"><img title="<?php echo iconv("utf-8", "iso-8859-1", $noticia->st_noticia); ?>" alt="Imagem 2" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticia->st_imagem_2)) ?>" width="48" height="48"/></a><br/>
+                <a href="<?php echo base_url(); ?>noticias/detalhe/<?php echo $noticia->cd_noticia;?>"><img title="<?php echo iconv("utf-8", "iso-8859-1", $noticia->st_noticia); ?>" alt="Imagem 3" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticia->st_imagem_3)) ?>" width="48" height="48"/></a><br/>
+                <a href="<?php echo base_url(); ?>noticias/detalhe/<?php echo $noticia->cd_noticia;?>"><img title="<?php echo iconv("utf-8", "iso-8859-1", $noticia->st_noticia); ?>" alt="Imagem 4" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticia->st_imagem_4)) ?>" width="48" height="48"/></a><br/>
             </div>
         </div>        
         <div class="limpa"></div>

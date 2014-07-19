@@ -32,8 +32,7 @@ class Noticias extends CI_Controller {
         $this->load->view('include/footer', $data);
     }
     
-    function detalhe($cd_noticia = FALSE) {
-        
+    function detalhe($st_noticia = FALSE, $cd_noticia = FALSE) {
         $this->load->model("Wtb_noticias_automotivas");
         $noticia = $this->Wtb_noticias_automotivas->buscaNoticia($cd_noticia);
         $this->load->helpers(array('form', 'url'));
