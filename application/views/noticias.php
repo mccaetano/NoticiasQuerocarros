@@ -2,17 +2,23 @@
   $(function() {
     $( "#tabs" ).tabs();
   });
-  </script>    
+</script>
+<script>
+    function linkredirect(link) {
+        window.location = link;
+        return false;
+    }
+</script>
 <div>    
     <div class="limpa"></div>
     <div style="margin: 0 auto; width: 100%">
         <div style="float: left; width: 560px; padding: 10px; height: 350px;">
-            <figure id="slide">
-                <img class="ativo" alt="<?php echo iconv("utf-8", "iso-8859-1", $noticias[0]->st_noticia); ?>" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticias[0]->st_imagem_1)) ?>" width="620" height="310"/>
-                <img alt="<?php echo iconv("utf-8", "iso-8859-1", $noticias[1]->st_noticia); ?>" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticias[1]->st_imagem_1)) ?>" width="550" height="300"/>
-                <img alt="<?php echo iconv("utf-8", "iso-8859-1", $noticias[2]->st_noticia); ?>" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticias[2]->st_imagem_1)) ?>" width="550" height="300"/>
-                <img alt="<?php echo iconv("utf-8", "iso-8859-1", $noticias[3]->st_noticia); ?>" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticias[3]->st_imagem_1)) ?>" width="550" height="300"/>
-            </figure>
+            <div id="slide" style="cursor: pointer">
+                <img class="ativo" alt="<?php echo iconv("utf-8", "iso-8859-1", $noticias[0]->st_noticia); ?>" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticias[0]->st_imagem_1)) ?>" width="620" height="310" onclick="linkredirect('<?php echo base_url(); ?>noticias/detalhe/<?php echo urlencode(str_replace(" ", "-", iconv("utf-8", "iso-8859-1", $noticias[0]->st_noticia))); ?>/<?php echo $noticias[0]->cd_noticia;?>');"/>
+                <img alt="<?php echo iconv("utf-8", "iso-8859-1", $noticias[1]->st_noticia); ?>" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticias[1]->st_imagem_1)) ?>" width="550" height="300" onclick="linkredirect('<?php echo base_url(); ?>noticias/detalhe/<?php echo urlencode(str_replace(" ", "-", iconv("utf-8", "iso-8859-1", $noticias[1]->st_noticia))); ?>/<?php echo $noticias[1]->cd_noticia;?>');"/>
+                <img alt="<?php echo iconv("utf-8", "iso-8859-1", $noticias[2]->st_noticia); ?>" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticias[2]->st_imagem_1)) ?>" width="550" height="300" onclick="linkredirect('<?php echo base_url(); ?>noticias/detalhe/<?php echo urlencode(str_replace(" ", "-", iconv("utf-8", "iso-8859-1", $noticias[2]->st_noticia))); ?>/<?php echo $noticias[2]->cd_noticia;?>');"/>
+                <img alt="<?php echo iconv("utf-8", "iso-8859-1", $noticias[3]->st_noticia); ?>" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticias[3]->st_imagem_1)) ?>" width="550" height="300" onclick="linkredirect('<?php echo base_url(); ?>noticias/detalhe/<?php echo urlencode(str_replace(" ", "-", iconv("utf-8", "iso-8859-1", $noticias[3]->st_noticia))); ?>/<?php echo $noticias[3]->cd_noticia;?>');"/>
+            </div>
             <script lang="text/javascript">
                 $(document).ready(function(){
                     $("#slide img:eq(0)").addClass("ativo").show();

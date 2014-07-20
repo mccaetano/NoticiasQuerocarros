@@ -1,8 +1,8 @@
-<div style="height: 10px"></div>        
-<div class="noticia_map"><a href="http://www.querocarros.com">home</a>/<a href="<?php echo base_url();?>noticias">noticias</a>/<?php echo iconv("utf-8", "iso-8859-1", $noticia->st_noticia); ?></div>
-<div style="height: 10px"></div>
+
 <div style="border: 1px solid #E2E4E6">
-    
+    <div style="height: 10px"></div>        
+    <div class="noticia_map"><a href="http://www.querocarros.com">home</a>/<a href="<?php echo base_url();?>noticias">noticias</a>/<?php echo iconv("utf-8", "iso-8859-1", $noticia->st_noticia); ?></div>
+    <div style="height: 10px"></div>
     <h1><?php echo iconv("utf-8", "iso-8859-1", $noticia->st_noticia); ?></h1>
     <div><?php echo iconv("utf-8", "iso-8859-1", $noticia->st_autor); ?>
         <div><?php echo $noticia->dt_noticia; ?>|<a href="<?php echo base_url()."link/redirect/".urlencode(base64_encode($noticia->st_link)); ?>"><?php echo $noticia->st_fonte == null ? "Fonte" : iconv("utf-8", "iso-8859-1", $noticia->st_fonte); ?></a>
