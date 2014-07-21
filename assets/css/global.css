@@ -21,34 +21,34 @@ border: 1px #CCCCCC inset;
 .informacao {
     color: #00529B;
     background-color: #BDE5F8;
-    background-image: url('../imagens/info.png');
+    background-image: url('http://noticias.querocarros.com/assets/image/info.png');
  	background-position: 10px 15px;
 }
 .twitter {
     color: #00529B;
     background-color: #ffffff;
-    background-image: url('../imagens/logo_twitter.jpg');
+    background-image: url('http://noticias.querocarros.com/assets/image/logo_twitter.jpg');
  	background-position: 10px 15px;
    padding:5px 10px 15px 80px;
 }
 .successo {
     color: #4F8A10;
     background-color: #DFF2BF;
-    background-image:url('../imagens/success.png');
+    background-image:url('http://noticias.querocarros.com/assets/image/success.png');
 	font-family:Arial, Helvetica, sans-serif; 
 	font-size:13px;
 }
 .aviso {
     color: #9F6000;
     background-color: #FEEFB3;
-    background-image: url('../imagens/warning.png');
+    background-image: url('http://noticias.querocarros.com/assets/image/warning.png');
 	font-family:Arial, Helvetica, sans-serif; 
 	font-size:13px;
 }
 .erro {
     color: #D8000C;
     background-color: #FFBABA;
-    background-image: url('../imagens/error.png');
+    background-image: url('http://noticias.querocarros.com/assets/image/error.png');
 	font-family:Arial, Helvetica, sans-serif; 
 	font-size:13px;
 	font-color:#FFFFFF;
@@ -58,7 +58,7 @@ input.invalid {
 	border: 2px red inset;
 }
 .botao_fipe{
-      background:url(../imagens/botao_fipe.jpg) ;
+      background:url('http://noticias.querocarros.com/assets/image/botao_fipe.jpg') ;
       width: 240px;
       height: 45px;
       color:white;
@@ -185,7 +185,7 @@ select {
   -webkit-padding-end: 20px; 
   -webkit-padding-start: 2px; 
   -webkit-user-select: none; 
-  background-image: url(../imagens/arrow.jpg),-webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5); 
+  background-image: url('http://noticias.querocarros.com/assets/image/arrow.jpg'),-webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5); 
   background-position: center right; 
   background-repeat: no-repeat;  
   border: 1px solid #AAA; 
@@ -435,7 +435,7 @@ font-family: "Arial";
 	border-radius: 10px;
 
 	/* Background color and gradients */
-	background: url(../imagens/backMenu.jpg);
+	background: url('http://noticias.querocarros.com/assets/image/backMenu.jpg');
 	border-bottom:3px solid #36771A;
 	-moz-box-shadow:inset 0px 0px 1px #edf9ff;
 	-webkit-box-shadow:inset 0px 0px 1px #edf9ff;
@@ -560,7 +560,7 @@ font-family: "Arial";
 #menu .menu_right 
 {
     position:absolute;
-    z-index: 20px;
+    z-index: 20;
    	float:right;
 	margin-right:0px;
 }
@@ -749,7 +749,7 @@ a {color:#333; text-decoration:none}
 }
 
 #dialog1 .d-header {
-  background:url(images/login-header.png) no-repeat 0 0 transparent; 
+  background:url('http://noticias.querocarros.com/assets/image/login-header.png') no-repeat 0 0 transparent; 
   width:375px; 
   height:150px;
 }
@@ -768,7 +768,7 @@ a {color:#333; text-decoration:none}
 
 #dialog1 .d-blank {
   float:left;
-  background:url(images/login-blank.png) no-repeat 0 0 transparent; 
+  background:url('http://noticias.querocarros.com/assets/image/login-blank.png') no-repeat 0 0 transparent; 
   width:267px; 
   height:53px;
 }
@@ -780,7 +780,7 @@ a {color:#333; text-decoration:none}
 }
 
 #boxes #dialog2 {
-  background:url(images/notice.png) no-repeat 0 0 transparent; 
+  background:url('http://noticias.querocarros.com/assets/image/notice.png') no-repeat 0 0 transparent; 
   width:326px; 
   height:229px;
   padding:50px 0 20px 25px;
@@ -841,7 +841,7 @@ list-style:none;
 	font-weight:bold;
 }
 .Cidade {
-color: #gray;
+color: gray;
 font-weight: bold;
 }
 .tip {
@@ -868,7 +868,7 @@ font-weight: bold;
 			border-radius: 11px;
 		}
 		.box2 {
-			background: transparent url(ashera.jpg)  no-repeat top left;
+			background: transparent url('http://noticias.querocarros.com/assets/image/ashera.jpg')  no-repeat top left;
 			width: 934px;
 			height: 77px;
 			margin: 0 auto 15px auto;
