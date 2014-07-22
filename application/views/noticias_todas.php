@@ -18,7 +18,7 @@ for ($i=0; $i<count($noticias); $i++) {
             <div><?php echo $noticias[$i]->dt_noticia?>&nbsp;
                 <?php echo $noticias[$i]->st_autor ?>
             </div>
-            <div>
+            <div class="fonte_menor" style="height: 25px">
                 <?php echo substr(mb_convert_encoding((string)$noticias[$i]->st_descricao, "iso-8859-1", "auto"), 0, 256); ?>...
             </div>
         </div>

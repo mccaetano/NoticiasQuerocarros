@@ -9,15 +9,15 @@
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/ico/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/global.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/menu.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/theme.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/jquery-ui.min.css">    
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/jquery-ui.min.css">   
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/global.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/menu.css" /> 
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/noticias.css">    
     
     
     <script src="<?php echo base_url(); ?>assets/js/jquery-1.11.0.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/jquery-ui.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/jquery-ui.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/js/jquery.hoverIntent.minified.js"></script>
     <script src="<?php echo base_url(); ?>assets/js/jquery.dcmegamenu.1.2.js"></script>
     
@@ -36,7 +36,7 @@
     <div class="container">
         <div class="rowhead">
             <div style="height: 119px">
-                <div style="padding-bottom:5px;padding-right:5px;padding-left:600px;">
+                <div class="fonte_menor" style="padding-bottom:5px;padding-right:5px;padding-left:590px;">
                     <a class="fonte_menor_branca">Central de relacionamento:De 2ª a 6ª, das 12h à s 18h Telefone (11)2626-8126</a>
                 </div>            
                 <div style="border:0; text-align:right; padding:0px; padding-left:400px; padding-top:15px; width:507px; height:93px;  ">

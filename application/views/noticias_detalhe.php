@@ -12,10 +12,18 @@
         <div style="margin: 0 auto; width: 690px">
             <div style="float: left; width: 570px; padding: 10px; height: 350px;">
                 <figure id="slide">
+                    <?php if ($noticia->st_imagem_1 != null) { ?>
                     <img class="ativo" alt="Imagem 1" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticia->st_imagem_1)) ?>" width="620" height="310"/>
+                    <?php } ?>
+                    <?php if ($noticia->st_imagem_2 != null) { ?>
                     <img alt="Imagem 2" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticia->st_imagem_2)) ?>" width="550" height="300"/>
+                    <?php } ?>
+                    <?php if ($noticia->st_imagem_3 != null) { ?>                    
                     <img alt="Imagem 3" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticia->st_imagem_3)) ?>" width="550" height="300"/>
+                    <?php } ?>
+                    <?php if ($noticia->st_imagem_4 != null) { ?>
                     <img alt="Imagem 4" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticia->st_imagem_4)) ?>" width="550" height="300"/>
+                    <?php } ?>                    
                 </figure>
                 <script lang="text/javascript">
                     $(document).ready(function(){
@@ -37,15 +45,23 @@
                 </script>
             </div>
             <div style="float: left; width: 80px; padding: 10px; height: 350px;">
+                <?php if ($noticia->st_imagem_1 != null) { ?>
                 <a href="<?php echo base_url(); ?>noticias/detalhe/<?php echo $noticia->cd_noticia;?>"><img title="<?php echo iconv("utf-8", "iso-8859-1", $noticia->st_noticia); ?>" alt="Imagem 1" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticia->st_imagem_1)) ?>" width="48" height="48"/></a><br/>
+                <?php } ?>
+                <?php if ($noticia->st_imagem_2 != null) { ?>
                 <a href="<?php echo base_url(); ?>noticias/detalhe/<?php echo $noticia->cd_noticia;?>"><img title="<?php echo iconv("utf-8", "iso-8859-1", $noticia->st_noticia); ?>" alt="Imagem 2" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticia->st_imagem_2)) ?>" width="48" height="48"/></a><br/>
+                <?php } ?>
+                <?php if ($noticia->st_imagem_3 != null) { ?>
                 <a href="<?php echo base_url(); ?>noticias/detalhe/<?php echo $noticia->cd_noticia;?>"><img title="<?php echo iconv("utf-8", "iso-8859-1", $noticia->st_noticia); ?>" alt="Imagem 3" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticia->st_imagem_3)) ?>" width="48" height="48"/></a><br/>
+                <?php } ?>
+                <?php if ($noticia->st_imagem_4 != null) { ?>
                 <a href="<?php echo base_url(); ?>noticias/detalhe/<?php echo $noticia->cd_noticia;?>"><img title="<?php echo iconv("utf-8", "iso-8859-1", $noticia->st_noticia); ?>" alt="Imagem 4" src="<?php echo base_url(); ?>imagem/load/<?php echo urlencode(base64_encode($noticia->st_imagem_4)) ?>" width="48" height="48"/></a><br/>
+                <?php } ?>
             </div>
         </div>        
         <div class="limpa"></div>
     </div>
-    <p><?php echo mb_convert_encoding((string)$noticia->st_descricao, "iso-8859-1", "auto"); ?></p>    
+    <p class="fonte_media"><?php echo mb_convert_encoding((string)$noticia->st_descricao, "iso-8859-1", "auto"); ?></p>    
 </div>
 <div>
     
